@@ -139,7 +139,7 @@ document.querySelector(".go").addEventListener('click', () => {
     if (empty.length != 0){
         empty[0].scrollIntoView();
     }else{
-        localStorage.setItem("save", params);
+        localStorage.setItem("save", params.toString());
         forwardToId(params);
     }
 
