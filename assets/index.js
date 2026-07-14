@@ -8,10 +8,16 @@ document.addEventListener("DOMContentLoaded", () => {
         let save_dir = document.querySelector("#save");
         let load_save = document.createElement("button");
         load_save.textContent = "Załaduj poprzedni";
-
+        
         save_dir.appendChild(load_save);
+        let remove_save = document.createElement("button");
+        remove_save.textContent = "Usuń poprzedni";
+
         load_save.addEventListener("click", () => {
             forwardToId(params);
+        });
+        remove_save.addEventListener("click", () => {
+            localStorage.clear();
         });
     }
 });
@@ -139,7 +145,6 @@ document.querySelector(".go").addEventListener('click', () => {
     if (empty.length != 0){
         empty[0].scrollIntoView();
     }else{
-        console.log(params.toString());
         localStorage.setItem("save", params.toString());
         forwardToId(params);
     }
