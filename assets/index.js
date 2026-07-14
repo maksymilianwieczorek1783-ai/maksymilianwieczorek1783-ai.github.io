@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         save_dir.appendChild(load_save);
         let remove_save = document.createElement("button");
         remove_save.textContent = "Usuń poprzedni";
+        save_dir.appendChild(remove_save);
 
         load_save.addEventListener("click", () => {
             forwardToId(params);
