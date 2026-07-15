@@ -16,25 +16,6 @@
     font-size: 13px;
 }
 
-.discord{
-    margin-bottom: 50px;
-    cursor: pointer;
-    position: relative;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 50px;
-    background-color: #0d93ec;
-    border-radius: 10px;
-    transition: 200ms;
-    margin-top: -5px;
-    box-shadow: 0px 0px 20px rgb(153, 153, 153);
-}
-
-.discord:hover{
-    opacity: 0.5;
-}
-
 .inner_grid{
     position: absolute;
     top: 0;
@@ -333,7 +314,8 @@ body{
     width: 90%;
     box-shadow: 0px 0px 20px rgb(153, 153, 153);
     height: 50px;
-    background-color: white;
+    background-color: #0d93ec;
+    color: white;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -349,7 +331,7 @@ body{
 }
 
 .go:hover{
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .logo_text{
@@ -581,27 +563,4 @@ input:focus{
         rotate: 360deg;
     }
 
-}
-
-#save{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-bottom: 20px;
-}
-#save button {
-    display: block;
-    margin: 0 auto 20px auto;
-
-    padding: 12px 28px;
-    font-size: 16px;
-    font-weight: 600;
-
-    color: white;
-    background: #2563eb;
-    border: none;
-    border-radius: 10px;
-
-    cursor: pointer;
-    transition: all 0.2s ease;
 }
