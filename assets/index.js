@@ -138,6 +138,16 @@ document.querySelector(".go").addEventListener('click', () => {
     }else{
 
         localStorage.setItem("identity", params.toString());
+    fetch(`${server_address}/profile-info` ,{
+        method: 'POST',
+        body: {profile: params.toString()}
+    })
+    .then(result => result.json())
+    .then(response => {
+        
+        alert("utworzono profil");
+
+    })
         forwardToId(params);
     }
 
